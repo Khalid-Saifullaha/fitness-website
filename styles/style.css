@@ -2,7 +2,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    /* background: #11101b; */
+    background: #11101b;
 }
 *{
     margin: 0;
@@ -11,6 +11,20 @@ body {
     text-decoration: none;
     box-sizing: border-box;
 }
+
+/* sared */
+.display-flex {
+    display: flex;
+}
+.text-light {
+    color: rgb(255, 255, 255);
+}
+.text-light-gray {
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+/* header */
 
 header {
     width: 100%;
@@ -50,6 +64,104 @@ header {
     color: #FFFFFF;
     background: #E6533C;
 }
+
+/* banner  */
+.banner {
+    background: #11101b;
+    margin: 0 auto;
+    gap: 10.40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-title {
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin: 28px 0px;   
+}
+.btn-primary {
+    width: 224px;
+    height: 54px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin: 0px 14px;
+}
+.btn-down {
+    width: 224px;
+    height: 54px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 42px;
+    background: none; 
+    border: 1px solid rgb(255, 255, 255);
+    padding: 16px 40px 16px 40px;
+    margin: 0px 14px;
+
+}
+
+#experience-badge {
+    width: 206px;
+    height: 96px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);  
+    margin-left: -100px;
+    margin-top: -400px; 
+}
+#number {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+}
+#video {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;   
+}
+
+/* .right-content {
+    margin-right: 214px;
+}
+.right-content img {
+    border: 2px solid red;
+    width: 349px;
+height: 580px;
+}
+.btn-500 {
+    width: 193px;
+    height: 98px;
+    font-size: 13px;
+    font-weight: 400;  
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400; 
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);  
+    text-align: center;
+    margin-left: -200px;
+    margin-right: 214px;
+    margin-top: -200px;
+
+}
+.free-500 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;  
+} */
+
 
 @media screen and (max-width: 1320px) {
     header {
@@ -93,6 +205,9 @@ header {
     }
     .nav-bar ul li a {
         margin-bottom: 12px;
+    }
+    .banner {
+        flex-direction: column;
     }
 }
 
