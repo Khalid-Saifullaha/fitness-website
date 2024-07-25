@@ -68,7 +68,7 @@ header {
 
 /* banner  */
 .banner {
-    background: #11101b;
+    background: #1b1015;
     margin: 0 auto;
     gap: 10.40rem;
     justify-content: space-between;
@@ -140,11 +140,12 @@ header {
 
 /* habit section */
 .habits {
+   
     margin-top: 200px;
 }
 .habit-container {
-    width: 1044px;
-    height: 400px; 
+    /* width: 1044px;
+    height: 400px;  */
     margin: 0 auto; 
     align-items: center; 
 }
@@ -223,27 +224,32 @@ header {
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
+    margin-top: 88px;
+    margin-bottom: 88px;
 }
 
 .bmi-calculator {
     width: 100%;
     height: 487px;
-    background: rgb(34, 34, 34); 
-    border: 2px solid red; 
+    background: rgb(34, 34, 34);    
 }
 
 .bmi-container {
+    width: 1060px;
+    height: 487px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;  
     align-items: center;
+    /* margin: 0 189px 0 189px; */
 }
 .bmi h3 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;    
 }
 
 .chart h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 900;
     margin-top: 52px;
     margin-bottom: 52px;
@@ -267,12 +273,43 @@ th {
    font-size: 28px;
 font-weight: 900; 
 }
+.your-bmi h3 {
+    margin-bottom: 14px;
+}
+.your-bmi p {
+    margin-bottom: 34px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.wight-wight {
+    margin-bottom: 12px;
+}
 
 .btn-bmi {
     width: 282.5px;
     height: 48px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);   
+    background: rgba(255, 255, 255, 0.1); 
+    border: none; 
+}
+.select-box {
+    width: 282.5px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); 
+    margin-bottom: 12px; 
+    border: none; 
+}
+
+.activity {
+    width: 569px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 34px;
+    border: none;   
 }
 
 @media screen and (max-width: 1320px) {
@@ -335,6 +372,13 @@ font-weight: 900;
         width: 169px;
         height: 54px;     
     }
+
+    /* habit container */
+
+    .habit {
+        width: 338px;
+        height: 1398px;
+    }
     .habit-container {
         display: block;
         width: fit-content;
@@ -361,7 +405,56 @@ font-weight: 900;
         flex-direction: column;
         margin: 0;
     }
-
+/* bmi section */
+.bmi-calculator {
+    flex-direction: column;
+    width: 374px;
+    margin: 0px;
+ }
+.bmi {
+    width: 353px;
+    height: 124px;
+    margin: 0px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.bmi {
+    margin-bottom: 32px;  
+} 
+ 
+.bmi-container {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    margin-left: 20px;
+}
+.chart {
+   margin-bottom: 42px; 
+}
+.your-bmi {
+    width: 354px;
+    height: 395px; 
+    /* flex-direction: column; */
+    align-items: start;
+    margin: 0px;
+    /* margin-left: 10px; */
+}
+.btn-bmi {
+    width: 170px;
+    height: 48px;
+}
+.select-box {
+    width: 170px;
+    height: 48px;
+}
+.wight-wight {
+    width: 353px;
+    height: 48px;  
+}
+.activity {
+    width: 333px;
+    height: 48px;
+}
 }
 
 
