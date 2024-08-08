@@ -118,7 +118,6 @@ header {
     border-radius: 42px;
     background: none; 
     border: 1px solid rgb(255, 255, 255);
-    /* padding: 16px 40px 16px 40px; */
 }
 .img-item {
     position: relative;
@@ -136,6 +135,7 @@ header {
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54); 
     position: absolute;
+    align-items: center;
     top: 70%;
     left: -30%;
 }
@@ -163,14 +163,21 @@ header {
     font-size: 13px;
     font-weight: 400;   
 }
+.circle {
+   background-color: #ff4148; 
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   position: absolute;
+   margin-left: 5px;
+   margin-top: 15px;
+}
 /* habit section */
 .habits {
    
     margin-top: 200px;
 }
 .habit-container {
-    /* width: 1044px;
-    height: 400px;  */
     margin: 0 auto; 
     align-items: center; 
 }
@@ -456,6 +463,32 @@ li {
     font-size: 16px;
     
 }
+.buy-now {
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #E6533C;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+.buy-now-one {
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #E6533C;
+    margin-top: 30px;
+    border-radius: 16px;    
+}
+.buy-now:hover {
+    background: #11101b;
+    cursor: pointer;
+}
+.buy-now-one:hover{
+    background: #11101b;
+    cursor: pointer;
+}
 
 
 /* footer */
@@ -474,7 +507,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 66px;
-    /* margin: 88px 0px; */
 }
 
 .footer-left-content h3 {
@@ -536,7 +568,7 @@ hr {
         padding: 0 30px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 576px) {
     .hamburger {
         display: block;
         cursor: pointer;
@@ -638,7 +670,6 @@ hr {
     width: 353px;
     height: 872px;
     margin-left: 15px;
-    /* margin: 0 auto; */
  }
 .bmi {
     width: 353px;
@@ -695,7 +726,6 @@ hr {
     height: 1800px;
     grid-template-columns: 1fr;
     margin: 0;
-    /* margin-left: 10px; */
     gap: 20px;
     background: rgba(255, 255, 255, 0.1); 
 }
