@@ -75,8 +75,9 @@ header {
 
 /* banner  */
 .banner {
-    background: #1b1015;
-    margin: 0 auto;
+    /* background: #1b1015; */
+    background: linear-gradient(to bottom,#000000, #434343, #000000);
+    /* margin: 0 auto; */
     gap: 10.40rem;
     justify-content: space-between;
     align-items: center;
@@ -96,9 +97,10 @@ header {
     margin-left: 190px;
     margin-bottom: 28px;
 }
-.banner-text button {
+/* .banner-text button {
     margin-left: 190px;
-}
+} */
+
 .btn-primary {
     width: 224px;
     height: 54px;
@@ -108,6 +110,9 @@ header {
     border-radius: 42px;
     background: rgb(230, 83, 60);
     border: none;
+    padding: 16px 40px 16px 40px;
+    margin-bottom: 28px;
+    margin-left: 190px;
 }
 .btn-down {
     width: 224px;
@@ -117,7 +122,12 @@ header {
     font-weight: 600;
     border-radius: 42px;
     background: none; 
+    padding: 16px 40px 16px 40px;
     border: 1px solid rgb(255, 255, 255);
+}
+.btn-join-app {
+    display: flex;
+    justify-content: space-evenly;
 }
 .img-item {
     position: relative;
@@ -435,6 +445,13 @@ margin-top: 49px;
     padding-inline-start: 5px;
     margin: 20px;
 }
+
+.card:hover{
+    background: #b5179e;
+}
+.card h3:hover {
+    color: #FFFFFF;
+}
 .card hr {
     color: #E6533C;
 }
@@ -606,33 +623,42 @@ hr {
     }
     .banner-text h2 {
         margin-left: 20px;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 120%;    
     }
     .banner-text p {
         margin-left: 20px;
     }
    
     .btn-primary {
-        width: 169px;
-        height: 54px;
+        width: 179px;
+        height: 64px;
+        margin-left: 0px;
     }
     .btn-down {
-        width: 169px;
-        height: 54px;     
+        width: 179px;
+        height: 64px;        
+    }
+    .img-item {
+        margin-left: 140px;
     }
     #experience-badge {
-        margin-left: 180px;
-        top: 40%;
+        margin-left: 140px;
+        top: 42%;
 
     }
     #experience {
         top: 20px;
+        left: 45%;
     }
 
     /* habit container */
 
-    .habit {
+    .habits {
         width: 338px;
-        height: 1398px;
+        height: 1458px;
+        margin: 0 auto;
     }
     .habit-container {
         display: block;
@@ -649,10 +675,11 @@ hr {
     
     .run-an-extra {
         width: 353px;
-        height: 571px;
+        height: 671px;
         margin: 0 auto;
         text-align: left;
         margin: 15px;
+        margin: 0 auto;
     }
     .run-img {
         width: 287px;
@@ -670,6 +697,7 @@ hr {
     width: 353px;
     height: 872px;
     margin-left: 15px;
+    margin: 0 auto;
  }
 .bmi {
     width: 353px;
@@ -679,6 +707,7 @@ hr {
     flex-direction: column;
     align-items: center;
     margin-bottom: 32px; 
+    margin: 0 auto;
 } 
  
 .bmi-container {
@@ -717,13 +746,15 @@ hr {
 .meet {
     width: 309px;
     height: 124px;
+    margin: 0 auto;
     margin-bottom: 97px;
     margin-left: 15px;
-
+    
 }
 .img-container {
     width: 353px;
     height: 1800px;
+    margin: 0 auto;
     grid-template-columns: 1fr;
     margin: 0;
     gap: 20px;
@@ -731,6 +762,7 @@ hr {
 }
 .team-container img {
     border-radius: 18px;
+    margin: 0 auto;
    
 }
 
@@ -755,9 +787,10 @@ hr {
 /* footer */
 
 footer {
-    width: 393px;
+    width: 100%;
     height: 1050px;
     margin-top: 1300px; 
+    
 } 
 .footer-container {
     flex-direction: column;
